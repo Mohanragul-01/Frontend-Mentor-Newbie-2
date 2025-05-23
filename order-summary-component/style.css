@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* font-family: 'Red Hat Display', sans-serif; */
+
+
+/* VARIABLES */
+
+:root
+{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --hover-blue: hsl(263, 80%, 60%);
+    --very-pale: hsl(225, 100%, 98%);
+    --de-saturated: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+/* COOMON STYLES */
+
+body
+{
+    height: 100vh;
+    background: top / contain no-repeat url(./images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+}
+
+main
+{
+    width: 450px;
+    height: 700px;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+
+/* CARD STYLES */
+
+.img-container img
+{
+    height: 220px;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-title
+{
+    color: var(--dark-blue);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.card-text
+{
+    color: var(--de-saturated);
+    font-weight: 500;
+}
+
+.plan
+{
+    height: 6rem;
+    border-radius: 1rem;
+    background-color: var(--very-pale);
+}
+
+.cost .category
+{
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+.cost .amount
+{
+    font-weight: 500;
+    color: var(--de-saturated);
+}
+
+.change
+{
+    color: var(--bright-blue);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.change:hover
+{
+    cursor: pointer;
+    color: var(--hover-blue);
+    text-decoration: none;
+    transition: linear 2s;
+}
+
+.payment
+{
+    background-color: var(--bright-blue);
+    width: 100%;
+    color: white;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 10px var(--pale-blue);
+}
+
+.payment:hover
+{
+    background-color: var(--hover-blue);
+    color: white;
+}
+
+.cancel
+{
+    width: 100%;
+    color: var(--de-saturated);
+    font-weight: 900;
+    padding: 1rem 0;
+}
+
+@media screen and (max-width: 376px) {
+    
+    body
+    {
+        background: top / contain no-repeat url(./images/pattern-background-mobile.svg);
+        background-color: var(--pale-blue);
+    }
+    
+    main 
+    {
+        width: 327px;
+        height: 567px;
+    }
+
+
+    /* CARD STYLES */
+    
+    .img-container img
+    {
+        height: 160px;
+    }
+
+    .card-content
+    {
+        padding: 2rem !important;
+    }
+    
+    .card-title
+    {
+        font-size: 1.5rem;
+    }
+    
+    .plan
+    {
+        height: 5rem;
+        padding: 1rem !important;
+        font-size: 12px !important;
+    }
+    .plan .cost
+    {
+        margin-left: .5rem !important;
+    }
+
+    .payment, .cancel
+    {
+        font-size: 12px !important;
+    }
+
+}

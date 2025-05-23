@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+/* font-family: 'Fraunces', serif; */
+
+
+/* VARIABLES FOR COLORS */
+
+:root
+{
+    --cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --darkBlue: hsl(212, 21%, 14%);
+    --grayishBlue: hsl(228, 12%, 48%); 
+}
+
+
+/* COMMON-STYLES */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    background: var(--cream);
+    font-size: 14px;
+}
+
+main
+{
+    width: 600px;
+    height: 450px;
+    background: white;
+    border-radius: .75rem;
+}
+
+button
+{
+    border: none;
+    outline: none;
+}
+
+
+/* CARD-STYLE */
+
+.image, .descrip
+{
+    width: 50%;
+}
+
+.image img
+{
+    width: 100%;
+    border-radius: .75rem 0 0 .75rem;
+}
+
+.descrip
+{
+    padding: 2rem;
+}
+
+.descrip h3
+{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: var(--grayishBlue);
+}
+
+.descrip h1
+{
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--darkBlue);
+}
+
+.descrip p
+{
+    font-weight: 500;
+    color: var(--grayishBlue);
+}
+
+.price
+{
+    margin: 1.2rem 0 ;
+}
+
+.price span
+{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cyan);
+}
+
+.price p
+{
+    text-decoration: line-through;
+}
+
+.btn
+{
+    width: 100%;
+    background-color: var(--cyan);
+    color: white;
+    padding: .75rem 0;
+}

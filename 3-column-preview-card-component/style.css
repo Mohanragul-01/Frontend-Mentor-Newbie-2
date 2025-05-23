@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* font-family: 'Big Shoulders Display', cursive;  font-family: 'Lexend Deca', sans-serif; */
+
+
+/* VARIABLES */
+
+:root
+{
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+}
+
+
+/* COMMON STYLES */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    background-color: var(--gray);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main
+{
+    width: 920px;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+/* CARD STYLES */
+
+.sed, .suv, .lux{
+    color: var(--white);
+    font-size: 15px;
+    padding: 3rem;
+}
+
+.sed
+{
+    background-color: var(--orange);
+}
+
+.suv
+{
+    background-color: var(--cyan);
+}
+
+.lux
+{
+    background-color: var(--dark-cyan);
+}
+
+.title
+{
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-size: 2rem;
+    color: var(--gray);
+}
+
+.info
+{
+    line-height: 1.5rem;
+}
+
+.more
+{
+    width: 9rem;
+    height: 3rem;
+    background-color: var(--white);
+    color: transparent;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    margin-top: 6rem;
+}
+
+.sed .more
+{
+    color: var(--orange);
+}
+
+.suv .more
+{
+    color: var(--cyan);
+}
+
+.lux .more
+{
+    color: var(--dark-cyan);
+}
+
+.more:hover
+{
+    color: var(--white);
+    background-color: transparent;
+    border: 3px solid var(--white);
+}
+
+
+
+@media screen and (max-width: 576px) {
+    main 
+    {
+        width: 325px;
+        height: auto;
+    }
+
+    .more
+    {
+        margin-top: 0;
+    }
+}
