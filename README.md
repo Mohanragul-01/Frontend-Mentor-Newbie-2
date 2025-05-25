@@ -1,7 +1,8 @@
-# FrontEnd_Mentor_Newbie_Challenges
+# FrontEnd_Mentor_Newbie_Challenges_2
 
+This repository contains my second batch of **Frontend Mentor** newbie-level challenges. These projects allowed me to further practice building clean, accessible, and responsive UI components using only HTML, CSS, and JavaScript—without any external frameworks.
 
-Links to the challenges I completed:
+### Links to the challenges I completed:
 
 01. Base Apparel coming soon page - https://base-apparel-coming-soon-page-steel-zeta.vercel.app/
 
@@ -22,3 +23,7 @@ Links to the challenges I completed:
 09. NFT preview card component - https://nft-preview-card-lemon-kappa.vercel.app/
 
 10. Product preview card component - https://product-preview-card-liart-chi.vercel.app/
+
+These components helped me gain more experience in working with layout systems like Flexbox and Grid, and focusing on design fidelity based on provided UI designs. All solutions are deployed on [Vercel](https://vercel.com/) for easy live preview.
+
+Stay tuned for more challenges as I continue to build and refine my frontend development skills!
